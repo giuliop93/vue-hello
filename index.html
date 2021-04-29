@@ -8,7 +8,11 @@
     <script src="https://cdn.jsdelivr.net/npm/vue@2.6.12/dist/vue.js"></script>
 </head>
 <body>
-    <h1></h1>
+    <main id="vueContainer">
+    <h1>{{message}}</h1>
+    <img v-for="img in images" v-bind:src="img"/>
+
+    </main>
 
     <script src="script.js"></script>
 </body>
